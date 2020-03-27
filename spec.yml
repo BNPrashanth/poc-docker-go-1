@@ -1,0 +1,30 @@
+swagger: '2.0'
+info:
+  title: Go One
+  description: Go One API
+  contact:
+    name: Go One API Support
+  version: 1.0.0
+schemes: [
+  "http"
+]
+consumes: [
+  "application/json"
+]
+produces: [
+  "application/json"
+]
+paths:
+  /:
+    get:
+      operationId: Default
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+              data:
+                type: string

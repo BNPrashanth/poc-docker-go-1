@@ -1,0 +1,1 @@
+swagger generate server -f spec.yml
