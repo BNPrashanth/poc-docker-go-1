@@ -46,7 +46,7 @@ func configureAPI(api *operations.GoOneAPI) http.Handler {
 			}
 			resp := &operations.DefaultOKBody{}
 
-			request, err := http.NewRequest("GET", "http://localhost:8082/", nil)
+			request, err := http.NewRequest("GET", "http://gotwo:8082/", nil)
 			request.Header.Set("Content-type", "application/json")
 
 			if err != nil {

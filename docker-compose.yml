@@ -1,0 +1,12 @@
+version: '2'
+services:
+  goone:
+    restart: "no"
+    build: .
+    ports:
+      - 8081:8081/tcp
+    networks:
+      - netone
+networks:
+  netone:
+    driver: bridge
